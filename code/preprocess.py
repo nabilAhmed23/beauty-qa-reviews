@@ -17,7 +17,7 @@ def transform_reviews():
 		review_beauty_cleaned.iloc[start: end]['sentiment'] = _list['sentiment']
 		print(review_beauty_cleaned.loc[start])
 		i += 1
-		utils.store_data(config.mongo_uri, 27017, config.db_name, config.reviews_cleaned_coll+'_test', review_beauty_cleaned)
+		utils.store_data(config.mongo_uri, 27017, config.db_name, config.reviews_cleaned_coll, review_beauty_cleaned)
 
 	print('Data Transformation Complete')
 
