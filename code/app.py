@@ -1,6 +1,5 @@
 from flask import request, Flask, jsonify
 import recommend
-from utilities import utils
 
 app = Flask(__name__)
 
